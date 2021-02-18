@@ -86,7 +86,13 @@ Now, taking a look at the most important statistics when classifying HOFers, we 
 
 ![stat_plot.png](./images/stat_plot.png)
 
-Next, we made loose projections on a player's career using the player's age and current statistics. We took a player's average per-season statistics and added that on until the aggregate
+Next, we made loose projections on a player's career using the player's age and current statistics. We took a player's average per-season statistics and added that statline for every season a player had until the average retirement age of 36. Afterwards, we used to the model to predict which player's have HOF trajectories. These were the players:
+
+Mike Trout, Nolan Arenado, Bryce Harper, Manny Machado, Miguel Cabrera, Mookie Betts, Christian Yelich, Francisco Lindor, Trevor Story, Cody Bellinger, Alex Bregman, Matt Chapman, Ronald Acuna Jr., Pete Alonso
+
+From this list, we identified any players with flagship PSA 10 rookie cards under $100, which were, **Trevor Story 2016 Topps Chrome**: $80.52, **Matt Chapman 2017 Topps**: $61.33, **Pete Alonso 2019 Topps**: $47.20, **Alex Bregman 2017 Topps**: $39.33
+
+
 ## Summary
 
 This project is an opportunity to expand your data science toolkit by evaluating, choosing, and working with new datasets. Spending time up front making sure you have a good dataset for a solvable problem will help avoid the major problems that can sometimes derail data science projects. You've got this!
