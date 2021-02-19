@@ -54,6 +54,7 @@ This project analyzes MLB statistics to recommend undervalued buys in the sports
 * This project will be following the OSEMN data-science process
 
 ## Results
+
 Our initial best model turned out to be the random forest model:
 
 ![random_forest.png](./images/random_forest.png)
@@ -92,7 +93,16 @@ Mike Trout, Nolan Arenado, Bryce Harper, Manny Machado, Miguel Cabrera, Mookie B
 
 From this list, we identified any players with flagship PSA 10 rookie cards under $100, which were, **Trevor Story 2016 Topps Chrome**: $80.52, **Matt Chapman 2017 Topps**: $61.33, **Pete Alonso 2019 Topps**: $47.20, **Alex Bregman 2017 Topps**: $39.33
 
+Afterwards, we found the most similar statistical HOF comparisons for these players to guage where the card can potentially go. To do this, for example, we took Trevor Story's career projections and subtracted that satline form all those of HOFers. Then, we took the absolute value of each difference and calculated the mean. In addition, sine the vintage and modern card markets differ so uch in pricing structure, we took the top-10 most similar HOFers and took the player with the nist recent rookie card. Below is a graphic from our presentation that shows each recommendation. (Note: Matt Chapman was left off as there was no suitable modern comparison).
 
-## Summary
+![recommendations.png](./images/recommendations.png)
 
-This project is an opportunity to expand your data science toolkit by evaluating, choosing, and working with new datasets. Spending time up front making sure you have a good dataset for a solvable problem will help avoid the major problems that can sometimes derail data science projects. You've got this!
+## Future Work
+
+There are a few tweaks and alternate directions that would be interesting to explore in the future.
+
+1) **Per 162 Game Data**: This project thus far had been done using career statistics. I think it would be valuable to look into a full-season's worth of games (162 games). In other words, this would be looking at what a player averages per 162 games. This would elevate any players who have good per season stats but have not played enough games to warrant amazing career stats. 
+
+2) **Era-based Model**: The game of baseball has changed a lot of time and with that, the statistics of a "good" player has also changed. For example, very early baseball was not a homerun-heavy sport. Frank "Home Run" Baker, who player in the early 1900's and was given that nickname because he hit a lot of home runs, never hit more than 12 in a season. In 2019, 58 players hit 30 or more home runs that season. Including only players after the expansion era (ended 1973) could provide a more accurate measure of what is needed for a player to reach the hall of fame today. The only problem would be lack of data points, but using SMOTE to artificially generate data should do the trick.
+
+3) **Pitcher model**: Generating a simliar methodolgy for pitchers would also be an interesting challege. The only issue here is that pitchers traditionally do not command as much money as batters in the sports card market. In general, I would not consider pitchers to be good investments.
