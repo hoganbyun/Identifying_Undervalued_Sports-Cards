@@ -7,6 +7,8 @@ Author: Hogan Byun
 
 A popular sports betting site is interested in capitalizing on the recent sports card boom and wants to implement a paid tool to provide sports card investment advice. While hot prospects/rookies have been the hottest part of the market, recently legends and Hall-of-Famers have also seen increases in card prices. This provides an excellent investment opportunity in the middle group: proven veterans who are on track to make the Hall of Fame. They are interested in a tool that can identify Hall of Fame worthy players to invest and provide advice to clients early. 
 
+**NOTE: This project concerns potential gains only and are not guaranteed. There is always risk of injury/other factors when choosing to invest in sports cards.**
+
 ## The Data
 
 All the data has been curated from Baseball-Reference's research tool, Stathead. The following batting statistic tables used are:
@@ -105,4 +107,4 @@ There are a few tweaks and alternate directions that would be interesting to exp
 
 2) **Era-based Model**: The game of baseball has changed a lot of time and with that, the statistics of a "good" player has also changed. For example, very early baseball was not a homerun-heavy sport. Frank "Home Run" Baker, who player in the early 1900's and was given that nickname because he hit a lot of home runs, never hit more than 12 in a season. In 2019, 58 players hit 30 or more home runs that season. Including only players after the expansion era (ended 1973) could provide a more accurate measure of what is needed for a player to reach the hall of fame today. The only problem would be lack of data points, but using SMOTE to artificially generate data should do the trick.
 
-3) **Pitcher model**: Generating a simliar methodolgy for pitchers would also be an interesting challege. The only issue here is that pitchers traditionally do not command as much money as batters in the sports card market. In general, I would not consider pitchers to be good investments.
+3) **Risk Assessment**: These comparisons represent potential price ceilings if a player's career goes as predicted, however, there are always players who do not continue their production or are halted by injuries. Incorporating a way to look at floors if these scenarios were to happen would definitely by useful when deciding to buy these players. 
